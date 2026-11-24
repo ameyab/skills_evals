@@ -1,0 +1,17 @@
+[project]
+name = "skills-evals"
+version = "0.1.0"
+description = "Evaluate Codex task quality with loadable skills and Braintrust tracing"
+readme = "README.md"
+authors = [
+    { name = "Ameya Bhatawdekar", email = "ameyab@ameyab.com" }
+]
+requires-python = ">=3.13"
+dependencies = ["braintrust>=0.37.0", "pydantic>=2.0"]
+
+[project.scripts]
+skills-evals = "skills_evals:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
